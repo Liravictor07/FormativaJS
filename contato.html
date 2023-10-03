@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld - Contato</title>
+    <script src="contato.js"></script>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo"><img src="img/logo.png"></div>
+            <ul>
+                <li><a href="techWorld.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="inicial_login.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contato">
+        <div class="container">
+            <br>
+            <br>
+            <section id="inicio">
+                <div class="container">
+                    <h1 id="titulo-digitacao"> </h1>
+                    <p1 id="paragrafo-digitacao"> </p1>
+                </div>
+            </section>
+            <br>
+
+
+            <form action="techWorld.html" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <input class="btn11" type="btn" value = "Enviar" onclick="alert('Obrigado por entrar em contato conosco! Responderemos em breve.');" />
+            </form>       
+        </div>
+    </section>
+        <!-- Elemento para mostrar o contador de visitas -->
+        <div id="contador-visitas">Número de visitas: </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="techWorld.html">Sobre nós</a></li>
+                        <li><a href="servicos.html">Nossos serviços</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Programa de Afiliados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Envio</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                        <li><a href="#">Status do pedido</a></li>
+                        <li><a href="#">Opções de pagamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><img src="img/facebook_5968764.png"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><img src="img/twitter_3670151.png"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><img src="img/instagram_3955024.png"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><img src="img/whatsapp_3670051.png"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

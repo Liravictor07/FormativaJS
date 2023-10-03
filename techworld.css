@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Orbitron:wght@600&family=Pixelify+Sans&display=swap');
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(img/fundorgb.jpg);
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para o cabeçalho (header) */
+header {
+    display: flex; /* Ativa o layout flexível */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Alinha verticalmente ao centro */
+    background: linear-gradient(135deg, #b700ff, #6200ff);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: top 0.3s; /* Adiciona uma transição suave para suavizar o efeito */
+    z-index: 1000; /* Certifica-se de que o cabeçalho esteja acima do conteúdo */
+
+}
+
+
+/* Estilos para a logo */
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+/* Estilos para a navegação (menu) */
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 100%; /* Espaçamento entre itens do menu */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+/* Estilo de hover para o cabeçalho */
+header:hover {
+    background: linear-gradient(135deg,#6200ff, #b700ff);
+}
+
+
+
+
+
+
+
+
+/* Estilos da seção de início */
+#inicio {
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background-color: transparent;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p1 {
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+p {
+    font-family: 'Gabarito', cursive;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+#contador-visitas {
+    font-size: 20px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    padding: 5px; /* Preenchimento interno */
+    border: 1px solid #333; /* Borda sólida com a cor #333 */
+    background-color: rgba(70, 39, 105, 0.5); /* Cor de fundo com transparência (0.8 é quase transparente) */
+    border-radius: 500px; /* Borda arredondada */
+    text-align: center; /* Alinhamento de texto ao centro */
+    width: 300px; /* Largura do quadrado de fundo */
+    height: 40px; /* Altura do quadrado de fundo */
+  }
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    #contador-visitas {
+        font-size: 36px;
+    }
+}
+
+
+
+
+/* Estilos para o vídeo em segundo plano */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para garantir que o vídeo fique atrás do conteúdo */
+    overflow: hidden;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #9900ff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px; /* Adicione um espaçamento à direita para separar a imagem do ícone */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.social-links img {
+    vertical-align: middle; /* Alinha verticalmente a imagem ao meio do ícone */
+    height: 40px; /* Define a altura da imagem para corresponder ao ícone */
+    width: 40px; /* Define a largura da imagem para corresponder ao ícone */
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo para a seção Sobre Nós */
+#sobre {
+    background-color: transparent; /* Cor de fundo do quadrado digital */
+    padding: 20px;
+}
+
+/* Estilo para o quadrado digital com fundo quase transparente */
+.quadrado {
+    background-color: rgba(70, 39, 105, 0.8); /* Cor de fundo com transparência (0.8 é quase transparente) */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada para criar a aparência de um quadrado digital */
+    text-align: center; /* Centralizar o conteúdo no quadrado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar destaque */
+}
+
+/* Estilo para o título "Sobre Nós" */
+.quadrado h2 {
+    color: #ffffff; /* Cor do título (não transparente) */
+}
+
+/* Estilo para o texto dentro do quadrado */
+.quadrado p {
+    color: #ffffff; /* Cor do texto (não transparente) */
+}
